@@ -1,5 +1,5 @@
 (function() {
-  var $, maxHead, minHead, reduced;
+  var $, maxHead, minHead, reduced, updateHead;
 
   $ = jQuery;
 
@@ -15,15 +15,19 @@
     return reduced = false;
   };
 
+  updateHead = function() {
+    var scroll;
+    scroll = $(window).scrollTop();
+    if (reduced && scroll < 31) {
+      return maxHead();
+    } else if (!reduced && scroll > 30) {
+      return minHead();
+    }
+  };
+
   $(function() {
     return $(window).scroll(function(e) {
-      var scroll;
-      scroll = $(window).scrollTop();
-      if (reduced && scroll < 31) {
-        return maxHead();
-      } else if (!reduced && scroll > 30) {
-        return minHead();
-      }
+      return updateHead();
     });
   });
 
