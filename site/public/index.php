@@ -1,57 +1,31 @@
-<?php
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylorotwell@gmail.com>
- */
+<!DOCTYPE html>
+<html>
+<head>
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
-|
-*/
+  <title>Karen Jeffreys: A life fully lived</title>
 
-require __DIR__.'/../bootstrap/autoload.php';
+  <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/main.js"></script>
 
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+</head>
+<body>
 
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
+  <div id="header">
+    <h1 id="header-logo">Karen Jeffreys</h1>
+    <a href="#" class="header-link" id="biography-link">Biography</a>
+    <a href="#" class="header-link" id="experience-link">Experience</a>
+    <a href="#" class="header-link" id="documents-link">Documents</a>
+    <a href="#" class="header-link" id="gallery-link">Gallery</a>
+  </div>
 
-$kernel = $app->make('Illuminate\Contracts\Http\Kernel');
-
-$response = $kernel->handle(
-	$request = Illuminate\Http\Request::capture()
-);
-
-$response->send();
-
-$kernel->terminate($request, $response);
+  <div id="content">
+    <div class="section" id="title-section"></div>
+    <div class="section" id="biography-section"></div>
+    <div class="section" id="experience-section"></div>
+    <div class="section" id="documents-section"></div>
+    <div class="section" id="gallery-section"></div>
+  </div>
+</body>
+</html>

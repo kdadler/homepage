@@ -1,0 +1,57 @@
+/* line 1, ../../assets/styles/main.scss */
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif;
+  background: #DBDBDB;
+  font-size: 20px;
+  color: #5F5F5F;
+}
+
+/* line 10, ../../assets/styles/main.scss */
+#header {
+  padding: 20px 15px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  width: 100%;
+  transition: padding 500ms;
+}
+
+/* line 19, ../../assets/styles/main.scss */
+#header.reduced {
+  padding: 0px 15px;
+}
+/* line 21, ../../assets/styles/main.scss */
+#header.reduced #header-logo {
+  font-size: 25px;
+}
+/* line 24, ../../assets/styles/main.scss */
+#header.reduced .header-link {
+  font-size: 16px;
+}
+
+/* line 28, ../../assets/styles/main.scss */
+#header-logo {
+  display: inline-block;
+  font-weight: 300;
+  border-right: 2px solid #C7C7C7;
+  padding-right: 20px;
+  margin: 10px 5px 10px 0;
+  transition: font-size 500ms;
+}
+
+/* line 36, ../../assets/styles/main.scss */
+.header-link {
+  color: #46A132;
+  font-size: 18px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: font-size 500ms;
+}
+
+/* line 43, ../../assets/styles/main.scss */
+.header-link:hover {
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
+}
