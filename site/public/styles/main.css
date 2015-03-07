@@ -12,7 +12,7 @@ body {
   padding: 20px 15px;
   background: rgba(255, 255, 255, 0.85);
   text-align: center;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   position: fixed;
   width: 100%;
   transition: padding 500ms;
@@ -60,24 +60,17 @@ body {
 
 /* line 51, ../../assets/styles/main.scss */
 .section {
-  height: 1000px;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
-/* line 55, ../../assets/styles/main.scss */
-#title-section {
-  background: url("/images/oakleaves.jpg") no-repeat;
-  background-size: 100%;
-}
-
-/* line 59, ../../assets/styles/main.scss */
+/* line 54, ../../assets/styles/main.scss */
 .section-title {
   text-align: center;
   font-weight: 300;
   color: #4BA338;
 }
 
-/* line 64, ../../assets/styles/main.scss */
+/* line 59, ../../assets/styles/main.scss */
 .section-text {
   text-align: center;
   padding: 10px 15%;
@@ -85,27 +78,27 @@ body {
   line-height: 35px;
 }
 
-/* line 70, ../../assets/styles/main.scss */
+/* line 65, ../../assets/styles/main.scss */
 .section-divider {
   width: 40px;
   margin: 20px auto;
   border-top: 2px solid #A4CD9B;
 }
 
-/* line 75, ../../assets/styles/main.scss */
+/* line 70, ../../assets/styles/main.scss */
 .next-section {
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 79, ../../assets/styles/main.scss */
+/* line 74, ../../assets/styles/main.scss */
 .next-section-link {
   color: #5F5F5F;
   font-size: 20px;
   text-decoration: none;
 }
 
-/* line 84, ../../assets/styles/main.scss */
+/* line 79, ../../assets/styles/main.scss */
 .next-section-arrow {
   display: block;
   margin: 10px auto;
@@ -113,47 +106,36 @@ body {
   border: 1px solid #E0E0E0;
   padding: 9px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 300ms;
+  background: #fff;
+  transition: box-shadow 300ms, background 300ms;
+}
+
+/* line 89, ../../assets/styles/main.scss */
+.next-section-arrow:hover {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background: #F9F9F9;
 }
 
 /* line 93, ../../assets/styles/main.scss */
-.next-section-arrow:hover {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* line 100, ../../assets/styles/main.scss */
-#title-section .section-blocker {
-  height: 550px;
-}
-/* line 103, ../../assets/styles/main.scss */
-#title-section .next-section-arrow {
-  border-width: 2px;
-  border-color: #fff;
-  width: 40px;
-  padding: 15px;
-}
-
-/* line 110, ../../assets/styles/main.scss */
-#documents {
+.columns {
   text-align: center;
   margin-top: 50px;
 }
 
-/* line 114, ../../assets/styles/main.scss */
-.document-item {
+/* line 97, ../../assets/styles/main.scss */
+.column {
   display: inline-block;
   vertical-align: top;
   padding: 10px 20px;
   width: 25%;
 }
-
-/* line 121, ../../assets/styles/main.scss */
-.documents-logo img {
-  height: 60px;
+/* line 102, ../../assets/styles/main.scss */
+.column .section-text {
+  padding: 0;
 }
 
-/* line 125, ../../assets/styles/main.scss */
-.documents-title {
+/* line 106, ../../assets/styles/main.scss */
+.column-title {
   margin-top: 20px;
   font-size: 25px;
   font-weight: 300;
@@ -161,28 +143,57 @@ body {
   padding-bottom: 10px;
 }
 
-/* line 132, ../../assets/styles/main.scss */
+/* line 115, ../../assets/styles/main.scss */
+#title-section {
+  background: url("/images/oakleaves.jpg") no-repeat;
+  background-size: 100%;
+  height: 1000px;
+  padding: 20px;
+}
+/* line 120, ../../assets/styles/main.scss */
+#title-section .section-blocker {
+  height: 550px;
+}
+/* line 123, ../../assets/styles/main.scss */
+#title-section .next-section-arrow {
+  border-width: 2px;
+  border-color: #fff;
+  width: 40px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0);
+}
+/* line 130, ../../assets/styles/main.scss */
+#title-section .next-section-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 135, ../../assets/styles/main.scss */
+.documents-logo img {
+  height: 60px;
+}
+
+/* line 139, ../../assets/styles/main.scss */
 .documents-list {
   padding: 0;
   text-align: left;
 }
-/* line 135, ../../assets/styles/main.scss */
+/* line 142, ../../assets/styles/main.scss */
 .documents-list li {
   display: block;
   margin: 20px 0;
   line-height: 30px;
 }
-/* line 139, ../../assets/styles/main.scss */
+/* line 146, ../../assets/styles/main.scss */
 .documents-list li a {
   text-decoration: none;
   font-size: 17px;
 }
-/* line 142, ../../assets/styles/main.scss */
+/* line 149, ../../assets/styles/main.scss */
 .documents-list li a .fa {
   margin-right: 7px;
 }
 
-/* line 148, ../../assets/styles/main.scss */
+/* line 155, ../../assets/styles/main.scss */
 #gallery {
   text-align: center;
   text-align: center;
@@ -190,7 +201,7 @@ body {
   margin: 40px auto;
 }
 
-/* line 154, ../../assets/styles/main.scss */
+/* line 161, ../../assets/styles/main.scss */
 .image {
   height: 112px;
   margin: 10px;
@@ -200,7 +211,7 @@ body {
   transition: box-shadow 300ms;
 }
 
-/* line 162, ../../assets/styles/main.scss */
+/* line 169, ../../assets/styles/main.scss */
 .image:hover {
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
 }

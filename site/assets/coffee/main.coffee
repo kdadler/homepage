@@ -23,6 +23,7 @@ class pageController
     @addImages()
     @events()
     @indexLocations()
+    @setResponsive()
 
   events: ->
     _t = @
@@ -36,6 +37,10 @@ class pageController
       _t.navigateTo @
     $('#header-logo').click =>
       @scrollTo 0
+
+  setResponsive: ->
+    portHeight = $(window).height()
+    $('#title-section .section-blocker').css 'height', portHeight - 170
 
 
   # Header controllers.
@@ -71,7 +76,7 @@ class pageController
     _t = @
     $('.section').each ->
       name               = _t.getName @
-      position           = $("##{name}-section").offset().top - 40
+      position           = $("##{name}-section").offset().top - 20
       _t.locations[name] = Math.max position, 0
 
   updateLocale: ->

@@ -17,7 +17,8 @@
     pageController.prototype.init = function() {
       this.addImages();
       this.events();
-      return this.indexLocations();
+      this.indexLocations();
+      return this.setResponsive();
     };
 
     pageController.prototype.events = function() {
@@ -38,6 +39,12 @@
       return $('#header-logo').click(function() {
         return _this.scrollTo(0);
       });
+    };
+
+    pageController.prototype.setResponsive = function() {
+      var portHeight;
+      portHeight = $(window).height();
+      return $('#title-section .section-blocker').css('height', portHeight - 170);
     };
 
     pageController.prototype.minHead = function() {
@@ -84,7 +91,7 @@
       return $('.section').each(function() {
         var name, position;
         name = _t.getName(this);
-        position = $("#" + name + "-section").offset().top - 40;
+        position = $("#" + name + "-section").offset().top - 20;
         return _t.locations[name] = Math.max(position, 0);
       });
     };
