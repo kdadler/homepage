@@ -26,13 +26,14 @@ body {
 #header.reduced #header-logo {
   font-size: 25px;
   border-right-width: 1px;
+  cursor: pointer;
 }
-/* line 25, ../../assets/styles/main.scss */
+/* line 26, ../../assets/styles/main.scss */
 #header.reduced .header-link {
   font-size: 16px;
 }
 
-/* line 29, ../../assets/styles/main.scss */
+/* line 30, ../../assets/styles/main.scss */
 #header-logo {
   display: inline-block;
   font-weight: 300;
@@ -42,7 +43,7 @@ body {
   transition: font-size 500ms;
 }
 
-/* line 37, ../../assets/styles/main.scss */
+/* line 38, ../../assets/styles/main.scss */
 .header-link {
   color: #46A132;
   font-size: 18px;
@@ -51,66 +52,155 @@ body {
   transition: font-size 500ms;
 }
 
-/* line 44, ../../assets/styles/main.scss */
-.header-link:hover {
+/* line 45, ../../assets/styles/main.scss */
+.header-link:hover, .current {
   border-bottom: 2px solid;
   padding-bottom: 3px;
 }
 
-/* line 50, ../../assets/styles/main.scss */
+/* line 51, ../../assets/styles/main.scss */
 .section {
   height: 1000px;
   padding: 20px;
 }
 
-/* line 54, ../../assets/styles/main.scss */
+/* line 55, ../../assets/styles/main.scss */
 #title-section {
   background: url("/images/oakleaves.jpg") no-repeat;
   background-size: 100%;
 }
 
-/* line 58, ../../assets/styles/main.scss */
+/* line 59, ../../assets/styles/main.scss */
 .section-title {
   text-align: center;
   font-weight: 300;
   color: #4BA338;
 }
 
-/* line 63, ../../assets/styles/main.scss */
+/* line 64, ../../assets/styles/main.scss */
 .section-text {
   text-align: center;
-  padding: 10px 20%;
+  padding: 10px 15%;
   color: #8E8E8E;
+  line-height: 35px;
 }
 
-/* line 68, ../../assets/styles/main.scss */
+/* line 70, ../../assets/styles/main.scss */
 .section-divider {
   width: 40px;
   margin: 20px auto;
   border-top: 2px solid #A4CD9B;
 }
 
-/* line 73, ../../assets/styles/main.scss */
+/* line 75, ../../assets/styles/main.scss */
 .next-section {
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 77, ../../assets/styles/main.scss */
+/* line 79, ../../assets/styles/main.scss */
 .next-section-link {
   color: #5F5F5F;
   font-size: 20px;
   text-decoration: none;
 }
 
-/* line 82, ../../assets/styles/main.scss */
+/* line 84, ../../assets/styles/main.scss */
 .next-section-arrow {
   display: block;
   margin: 10px auto;
   width: 30px;
+  border: 1px solid #E0E0E0;
+  padding: 9px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 300ms;
 }
 
-/* line 91, ../../assets/styles/main.scss */
-#title-section #next-section-link {
-  color: #fff;
+/* line 93, ../../assets/styles/main.scss */
+.next-section-arrow:hover {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 100, ../../assets/styles/main.scss */
+#title-section .section-blocker {
+  height: 550px;
+}
+/* line 103, ../../assets/styles/main.scss */
+#title-section .next-section-arrow {
+  border-width: 2px;
+  border-color: #fff;
+  width: 40px;
+  padding: 15px;
+}
+
+/* line 110, ../../assets/styles/main.scss */
+#documents {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 114, ../../assets/styles/main.scss */
+.document-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px;
+  width: 25%;
+}
+
+/* line 121, ../../assets/styles/main.scss */
+.documents-logo img {
+  height: 60px;
+}
+
+/* line 125, ../../assets/styles/main.scss */
+.documents-title {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  border-bottom: 1px solid #D7D7D7;
+  padding-bottom: 10px;
+}
+
+/* line 132, ../../assets/styles/main.scss */
+.documents-list {
+  padding: 0;
+  text-align: left;
+}
+/* line 135, ../../assets/styles/main.scss */
+.documents-list li {
+  display: block;
+  margin: 20px 0;
+  line-height: 30px;
+}
+/* line 139, ../../assets/styles/main.scss */
+.documents-list li a {
+  text-decoration: none;
+  font-size: 17px;
+}
+/* line 142, ../../assets/styles/main.scss */
+.documents-list li a .fa {
+  margin-right: 7px;
+}
+
+/* line 148, ../../assets/styles/main.scss */
+#gallery {
+  text-align: center;
+  text-align: center;
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* line 154, ../../assets/styles/main.scss */
+.image {
+  height: 112px;
+  margin: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: box-shadow 300ms;
+}
+
+/* line 162, ../../assets/styles/main.scss */
+.image:hover {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
 }
