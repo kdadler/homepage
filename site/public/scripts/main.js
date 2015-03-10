@@ -12,7 +12,61 @@
 
     pageController.prototype.currentLocale = 'title';
 
-    pageController.prototype.images = ['/images/gallery/DSCF6547.jpg', '/images/gallery/IMG_0042.jpg', '/images/gallery/DSC_0102.JPG', '/images/gallery/DSC_0173.JPG', '/images/gallery/DSC_0275.JPG', '/images/gallery/DSCF1496.JPG', '/images/gallery/P1140056.JPG', '/images/gallery/P6290102.JPG', '/images/gallery/P7010155.JPG', '/images/gallery/P7030182.JPG'];
+    pageController.prototype.images = [
+      {
+        file: '/images/gallery/DSCF6547.jpg',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/IMG_1986.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/IMG_1992.JPG',
+        w: 675,
+        h: 900
+      }, {
+        file: '/images/gallery/IMG_0042.jpg',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/DSC_0102.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/DSC_0173.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/DSC_0275.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/DSCF1496.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/P1140056.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/P6290102.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/P7010155.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/gallery/P7030182.JPG',
+        w: 900,
+        h: 675
+      }, {
+        file: '/images/oakleaves.jpg',
+        w: 1920,
+        h: 1277
+      }
+    ];
 
     pageController.prototype.init = function() {
       this.addImages();
@@ -140,9 +194,9 @@
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         image = _ref[_i];
         _results.push({
-          src: image,
-          w: 900,
-          h: 675
+          src: image.file,
+          w: image.w,
+          h: image.h
         });
       }
       return _results;
@@ -154,7 +208,7 @@
       _results = [];
       for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
         image = _ref[i];
-        _results.push($('#gallery').append("<img class=\"image\" src=\"" + image + "\" index=\"" + i + "\">"));
+        _results.push($('#gallery').append("<img class=\"image\" src=\"" + image.file + "\" index=\"" + i + "\">"));
       }
       return _results;
     };

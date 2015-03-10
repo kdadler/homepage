@@ -5,16 +5,57 @@ class pageController
   locations     : {}
   currentLocale : 'title'
   images        : [
-    '/images/gallery/DSCF6547.jpg'
-    '/images/gallery/IMG_0042.jpg'
-    '/images/gallery/DSC_0102.JPG'
-    '/images/gallery/DSC_0173.JPG'
-    '/images/gallery/DSC_0275.JPG'
-    '/images/gallery/DSCF1496.JPG'
-    '/images/gallery/P1140056.JPG'
-    '/images/gallery/P6290102.JPG'
-    '/images/gallery/P7010155.JPG'
-    '/images/gallery/P7030182.JPG'
+      file : '/images/gallery/DSCF6547.jpg'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/IMG_1986.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/IMG_1992.JPG'
+      w    : 675
+      h    : 900
+    ,
+      file : '/images/gallery/IMG_0042.jpg'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/DSC_0102.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/DSC_0173.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/DSC_0275.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/DSCF1496.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/P1140056.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/P6290102.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/P7010155.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/gallery/P7030182.JPG'
+      w    : 900
+      h    : 675
+    ,
+      file : '/images/oakleaves.jpg'
+      w    : 1920
+      h    : 1277
   ]
 
 
@@ -108,13 +149,13 @@ class pageController
 
   getImageItems: ->
     for image in @images
-      src : image
-      w   : 900
-      h   : 675
+      src : image.file
+      w   : image.w
+      h   : image.h
 
   addImages: ->
     for image, i in @images
-      $('#gallery').append "<img class=\"image\" src=\"#{image}\" index=\"#{i}\">"
+      $('#gallery').append "<img class=\"image\" src=\"#{image.file}\" index=\"#{i}\">"
 
 
 # Page initialisation.
