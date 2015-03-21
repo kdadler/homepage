@@ -79,26 +79,32 @@ body {
 }
 
 /* line 65, ../../assets/styles/main.scss */
+.section-emphasis {
+  color: #767676;
+  font-weight: bold;
+}
+
+/* line 69, ../../assets/styles/main.scss */
 .section-divider {
   width: 40px;
   margin: 20px auto;
   border-top: 2px solid #A4CD9B;
 }
 
-/* line 70, ../../assets/styles/main.scss */
+/* line 74, ../../assets/styles/main.scss */
 .next-section {
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 74, ../../assets/styles/main.scss */
+/* line 78, ../../assets/styles/main.scss */
 .next-section-link {
   color: #5F5F5F;
   font-size: 20px;
   text-decoration: none;
 }
 
-/* line 79, ../../assets/styles/main.scss */
+/* line 83, ../../assets/styles/main.scss */
 .next-section-arrow {
   display: block;
   margin: 10px auto;
@@ -110,31 +116,31 @@ body {
   transition: box-shadow 300ms, background 300ms;
 }
 
-/* line 89, ../../assets/styles/main.scss */
+/* line 93, ../../assets/styles/main.scss */
 .next-section-arrow:hover {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   background: #F9F9F9;
 }
 
-/* line 93, ../../assets/styles/main.scss */
+/* line 97, ../../assets/styles/main.scss */
 .columns {
   text-align: center;
   margin-top: 50px;
 }
 
-/* line 97, ../../assets/styles/main.scss */
+/* line 101, ../../assets/styles/main.scss */
 .column {
   display: inline-block;
   vertical-align: top;
   padding: 10px 20px;
   width: 25%;
 }
-/* line 102, ../../assets/styles/main.scss */
+/* line 106, ../../assets/styles/main.scss */
 .column .section-text {
   padding: 0;
 }
 
-/* line 106, ../../assets/styles/main.scss */
+/* line 110, ../../assets/styles/main.scss */
 .column-title {
   margin-top: 20px;
   font-size: 25px;
@@ -143,18 +149,18 @@ body {
   padding-bottom: 10px;
 }
 
-/* line 115, ../../assets/styles/main.scss */
+/* line 119, ../../assets/styles/main.scss */
 #title-section {
   background: url("/images/oakleaves.jpg") no-repeat;
   background-size: 100%;
   height: 1000px;
   padding: 20px;
 }
-/* line 120, ../../assets/styles/main.scss */
+/* line 124, ../../assets/styles/main.scss */
 #title-section .section-blocker {
   height: 550px;
 }
-/* line 123, ../../assets/styles/main.scss */
+/* line 127, ../../assets/styles/main.scss */
 #title-section .next-section-arrow {
   border-width: 2px;
   border-color: #fff;
@@ -162,38 +168,51 @@ body {
   padding: 15px;
   background: rgba(255, 255, 255, 0);
 }
-/* line 130, ../../assets/styles/main.scss */
+/* line 134, ../../assets/styles/main.scss */
 #title-section .next-section-arrow:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 135, ../../assets/styles/main.scss */
+/* line 139, ../../assets/styles/main.scss */
 .documents-logo img {
   height: 60px;
 }
 
-/* line 139, ../../assets/styles/main.scss */
+/* line 143, ../../assets/styles/main.scss */
 .documents-list {
   padding: 0;
   text-align: left;
 }
-/* line 142, ../../assets/styles/main.scss */
+/* line 146, ../../assets/styles/main.scss */
 .documents-list li {
   display: block;
   margin: 20px 0;
   line-height: 30px;
 }
-/* line 146, ../../assets/styles/main.scss */
+/* line 150, ../../assets/styles/main.scss */
 .documents-list li a {
   text-decoration: none;
   font-size: 17px;
+  background: #46A132;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 10px 5px 6px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.49);
+  transition: box-shadow 300ms, background 300ms;
 }
-/* line 149, ../../assets/styles/main.scss */
+/* line 161, ../../assets/styles/main.scss */
 .documents-list li a .fa {
   margin-right: 7px;
 }
+/* line 165, ../../assets/styles/main.scss */
+.documents-list li a:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  background: #57B342;
+}
 
-/* line 155, ../../assets/styles/main.scss */
+/* line 171, ../../assets/styles/main.scss */
 #gallery {
   text-align: center;
   text-align: center;
@@ -201,7 +220,7 @@ body {
   margin: 40px auto;
 }
 
-/* line 161, ../../assets/styles/main.scss */
+/* line 177, ../../assets/styles/main.scss */
 .image {
   height: 112px;
   margin: 10px;
@@ -211,7 +230,7 @@ body {
   transition: box-shadow 300ms;
 }
 
-/* line 169, ../../assets/styles/main.scss */
+/* line 185, ../../assets/styles/main.scss */
 .image:hover {
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
 }

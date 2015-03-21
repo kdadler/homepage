@@ -62,6 +62,10 @@ body {
   color: #8E8E8E;
   line-height: 35px;
 }
+.section-emphasis {
+  color: #767676;
+  font-weight: bold;
+}
 .section-divider {
   width: 40px;
   margin: 20px auto;
@@ -146,9 +150,21 @@ body {
     a {
       text-decoration: none;
       font-size: 17px;
+      background: #46A132;
+      color: #fff;
+      display: block;
+      text-align: center;
+      padding: 10px 5px 6px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.49);
+      transition: box-shadow 300ms, background 300ms;
       .fa {
         margin-right: 7px;
       }
+    }
+    a:hover {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+      background: #57B342;
     }
   }
 }
