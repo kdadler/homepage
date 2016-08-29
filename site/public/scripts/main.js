@@ -104,7 +104,7 @@ var pageController = {
     if (locale !== this.currentLocale) {
       this.currentLocale = locale;
       $('.current').removeClass('current');
-      $("##{locale}-link").addClass('current');
+      $('#' + locale + '-link').addClass('current');
     }
   },
 
@@ -142,7 +142,7 @@ var pageController = {
     var length = this.images.length;
 
     for (i; i < length; i++) {
-      $('#gallery').append("<img class=\"image\" src=\"#{image.file}\" index=\"#{i}\">");
+      $('#gallery').append('<img class="image" src="' + image.file + '" index="' + i + '">');
     }
   }
 }
