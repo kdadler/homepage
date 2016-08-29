@@ -44,7 +44,7 @@ var pageController = {
       e.preventDefault();
       _t.navigateTo(this);
     });
-    this.$('#header-logo').click(function () {
+    $('#header-logo').click(function () {
       _t.scrollTo(0);
     });
   },
