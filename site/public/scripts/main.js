@@ -94,7 +94,7 @@ var pageController = {
     var _t = this
     $('.section').each(function () {
       var name = _t.getName(this);
-      var position = $("##{name}-section").offset().top - 20
+      var position = $('#' + name + '-section').offset().top - 20;
       _t.locations[name] = Math.max(position, 0);
     });
   },
