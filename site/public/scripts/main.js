@@ -142,7 +142,7 @@ var pageController = {
     var length = this.images.length;
 
     for (i; i < length; i++) {
-      $('#gallery').append('<img class="image" src="' + image.file + '" index="' + i + '">');
+      $('#gallery').append('<img class="image" src="' + this.images[i].file + '" index="' + i + '">');
     }
   }
 }
