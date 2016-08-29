@@ -32,7 +32,8 @@ var pageController = {
   },
 
   events: function () {
-    var _t = this.$(window).scroll(function () {
+    var _t = this;
+    $(window).scroll(function () {
       _t.updateHead();
       _t.updateLocale();
     });
