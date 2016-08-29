@@ -7,8 +7,8 @@ var pageController = {
   // Images for the gallery.
   images: [
     {src: '/images/gallery/DSCF6547.jpg', w: 900, h: 675},
-    {src: '/images/gallery/IMG_1986.JPG', w: 900, h: 675},
-    {src: '/images/gallery/IMG_1992.JPG', w: 675, h: 900},
+    // {src: '/images/gallery/IMG_1986.JPG', w: 900, h: 675},
+    // {src: '/images/gallery/IMG_1992.JPG', w: 675, h: 900},
     {src: '/images/gallery/IMG_0042.jpg', w: 900, h: 675},
     {src: '/images/gallery/DSC_0102.JPG', w: 900, h: 675},
     {src: '/images/gallery/DSC_0173.JPG', w: 900, h: 675},
